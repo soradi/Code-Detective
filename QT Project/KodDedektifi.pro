@@ -68,5 +68,5 @@ RESOURCES += \
 #ICON = images/logo.ico
 #ICON = images/logo.icns # for MacOS
 
-INCLUDEPATH += /usr/include/poppler/qt5
-LIBS += -L/usr/local/lib -lpoppler-qt5
+#INCLUDEPATH += /usr/include/poppler/qt5
+#LIBS += -L/usr/local/lib -lpoppler-qt5

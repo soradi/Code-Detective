@@ -9,7 +9,7 @@
 #include <QString>
 #include <QDebug>
 #include <QFile>
-#include <poppler-qt5.h>
+//#include <poppler-qt5.h>
 
 #include <fundamentals.h>
 

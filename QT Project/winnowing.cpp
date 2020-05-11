@@ -38,6 +38,7 @@ void getFingerprints(Code &code, int k, int w, long long factor)
     }
 }
 
+
 // A function which compares a given code pair.
 int compareCodes(Code &code1, Code &code2)
 {

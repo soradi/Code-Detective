@@ -52,7 +52,7 @@
      <widget class="QLineEdit" name="text_k">
       <property name="geometry">
        <rect>
-        <x>490</x>
+        <x>320</x>
         <y>180</y>
         <width>41</width>
         <height>21</height>
@@ -68,7 +68,7 @@
      <widget class="QLabel" name="label_9">
       <property name="geometry">
        <rect>
-        <x>240</x>
+        <x>150</x>
         <y>10</y>
         <width>31</width>
         <height>22</height>
@@ -81,9 +81,9 @@
      <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>90</y>
-        <width>111</width>
+        <x>370</x>
+        <y>50</y>
+        <width>151</width>
         <height>30</height>
        </rect>
       </property>
@@ -91,13 +91,13 @@
        <string notr="true"/>
       </property>
       <property name="text">
-       <string>Source folder:</string>
+       <string>مجلد الملفات المطلوب مقارنتها</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_w">
       <property name="geometry">
        <rect>
-        <x>150</x>
+        <x>370</x>
         <y>210</y>
         <width>131</width>
         <height>21</height>
@@ -113,7 +113,7 @@
      <widget class="QSlider" name="slider_k">
       <property name="geometry">
        <rect>
-        <x>310</x>
+        <x>140</x>
         <y>180</y>
         <width>161</width>
         <height>21</height>
@@ -141,7 +141,7 @@
      <widget class="QLabel" name="label_7">
       <property name="geometry">
        <rect>
-        <x>190</x>
+        <x>10</x>
         <y>50</y>
         <width>231</width>
         <height>20</height>
@@ -151,13 +151,13 @@
        <string notr="true"/>
       </property>
       <property name="text">
-       <string>(Check the guide for details.)</string>
+       <string/>
       </property>
      </widget>
      <widget class="QSlider" name="slider_w">
       <property name="geometry">
        <rect>
-        <x>310</x>
+        <x>140</x>
         <y>211</y>
         <width>161</width>
         <height>20</height>
@@ -185,7 +185,7 @@
      <widget class="QLabel" name="label_3">
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>450</x>
         <y>10</y>
         <width>121</width>
         <height>21</height>
@@ -195,13 +195,13 @@
        <string notr="true"/>
       </property>
       <property name="text">
-       <string>Doc. type:</string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;نوع الملف&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
      <widget class="QRadioButton" name="radio_Other">
       <property name="geometry">
        <rect>
-        <x>375</x>
+        <x>350</x>
         <y>7</y>
         <width>21</width>
         <height>31</height>
@@ -217,7 +217,7 @@
      <widget class="QRadioButton" name="radio_TXT">
       <property name="geometry">
        <rect>
-        <x>215</x>
+        <x>180</x>
         <y>7</y>
         <width>21</width>
         <height>31</height>
@@ -233,8 +233,8 @@
      <widget class="QRadioButton" name="radio_C">
       <property name="geometry">
        <rect>
-        <x>145</x>
-        <y>7</y>
+        <x>410</x>
+        <y>6</y>
         <width>21</width>
         <height>31</height>
        </rect>
@@ -249,14 +249,17 @@
      <widget class="QPushButton" name="pushDir">
       <property name="geometry">
        <rect>
-        <x>150</x>
-        <y>90</y>
-        <width>381</width>
+        <x>80</x>
+        <y>50</y>
+        <width>281</width>
         <height>30</height>
        </rect>
       </property>
       <property name="cursor">
        <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton
@@ -266,23 +269,23 @@
 }</string>
       </property>
       <property name="text">
-       <string>Select...</string>
+       <string>اختر المجلد</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_6">
       <property name="geometry">
        <rect>
-        <x>190</x>
-        <y>140</y>
+        <x>130</x>
+        <y>130</y>
         <width>231</width>
-        <height>20</height>
+        <height>31</height>
        </rect>
       </property>
       <property name="styleSheet">
        <string notr="true"/>
       </property>
       <property name="text">
-       <string>(Check the guide for details.)</string>
+       <string/>
       </property>
      </widget>
      <widget class="QTextBrowser" name="textBrowser">
@@ -305,9 +308,9 @@
      <widget class="QLabel" name="label_4">
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>440</x>
         <y>250</y>
-        <width>141</width>
+        <width>81</width>
         <height>21</height>
        </rect>
       </property>
@@ -315,14 +318,14 @@
        <string notr="true"/>
       </property>
       <property name="text">
-       <string>Source codes:</string>
+       <string>الملفات</string>
       </property>
      </widget>
      <widget class="QCheckBox" name="checkFolderMode">
       <property name="geometry">
        <rect>
-        <x>150</x>
-        <y>50</y>
+        <x>500</x>
+        <y>80</y>
         <width>21</width>
         <height>24</height>
        </rect>
@@ -334,7 +337,7 @@
      <widget class="QLabel" name="label_k">
       <property name="geometry">
        <rect>
-        <x>150</x>
+        <x>370</x>
         <y>180</y>
         <width>141</width>
         <height>21</height>
@@ -376,7 +379,7 @@
       </property>
       <property name="geometry">
        <rect>
-        <x>400</x>
+        <x>210</x>
         <y>10</y>
         <width>131</width>
         <height>25</height>
@@ -397,7 +400,7 @@
      <widget class="QLineEdit" name="text_w">
       <property name="geometry">
        <rect>
-        <x>490</x>
+        <x>320</x>
         <y>210</y>
         <width>41</width>
         <height>21</height>
@@ -413,8 +416,8 @@
      <widget class="QCheckBox" name="checkTweaks">
       <property name="geometry">
        <rect>
-        <x>150</x>
-        <y>140</y>
+        <x>500</x>
+        <y>130</y>
         <width>21</width>
         <height>24</height>
        </rect>
@@ -426,9 +429,9 @@
      <widget class="QLabel" name="label_8">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>50</y>
-        <width>101</width>
+        <x>330</x>
+        <y>80</y>
+        <width>161</width>
         <height>20</height>
        </rect>
       </property>
@@ -436,14 +439,14 @@
        <string notr="true"/>
       </property>
       <property name="text">
-       <string>Folder mode:</string>
+       <string>البحث في المجلدات الفرعية أيضا</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_5">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>140</y>
+        <x>360</x>
+        <y>130</y>
         <width>111</width>
         <height>20</height>
        </rect>
@@ -452,13 +455,13 @@
        <string notr="true"/>
       </property>
       <property name="text">
-       <string>Tweaks:</string>
+       <string>اعدادات متقدمة</string>
       </property>
      </widget>
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>170</x>
+        <x>390</x>
         <y>10</y>
         <width>16</width>
         <height>22</height>
@@ -468,33 +471,17 @@
        <string>C</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_10">
+     <widget class="QProgressBar" name="pB_Percentage">
       <property name="geometry">
        <rect>
-        <x>320</x>
-        <y>10</y>
-        <width>31</width>
-        <height>22</height>
+        <x>20</x>
+        <y>250</y>
+        <width>411</width>
+        <height>23</height>
        </rect>
       </property>
-      <property name="text">
-       <string>PDF</string>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="radio_PDF">
-      <property name="geometry">
-       <rect>
-        <x>295</x>
-        <y>7</y>
-        <width>21</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="checked">
-       <bool>false</bool>
+      <property name="value">
+       <number>0</number>
       </property>
      </widget>
     </widget>
@@ -524,56 +511,57 @@
        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Noto Sans'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:5px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;1. Kod Dedektifi Nedir?&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Kod Dedektifi, verilen kaynak kodlar arasındaki intihal tespitinin yapılması için oluşturulmuş bir yazılımdır. Yazılımda, &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-style:italic;&quot;&gt;Measure of Software Similarity&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; (MOSS) isimli bir yöntemin adımları esas alınmıştır.&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Güncellemeler için &lt;/span&gt;&lt;a href=&quot;https://github.com/arazosman/Code-Detective&quot;&gt;&lt;span style=&quot; font-size:12pt; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/arazosman/Code-Detective&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; adresini takip edebilirsiniz.&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;2. Kod Dedektifi Hangi Kaynak Kodlar için Kullanılabilir?&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Kod Dedektifi, düz metin formatındaki bütün kaynak kodlar (C, Java, Python vs.) için ve PDF formatlı dökümanlar için kullanılabilir. Yazılımın mevcut sürümünde C kaynak kodları için, kodların söz dizimlerinin (syntax) işlenmesiyle bir dönüştürme işlemi uygulanarak başarım oranının arttırılması sağlanır.&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:5px; margin-left:10px; margin-right:5px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;3. Kod Dedektifi Nasıl Çalışır?&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Kod Dedektifi, temel olarak 5 adımdan oluşur:&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;1. Kaynak kodların keyfi bileşenlerinden ardındırılması. (Yalnızca C kaynak kodları için).&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;2. Kaynak kodların iskeletlerinin çıkarılması. (Yalnızca C kaynak kodları için).&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;3. Sadeleştirilen kaynak kodların parmak izlerinin çıkarılması.&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;4. Ayıklama algoritmasıyla parmak izlerinin seçilmesi.&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;5. Parmak izlerinin karşılaştırılarak benzerlik ölçümünün yapılması.&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;3.1. Keyfi Bileşenlerin Arındırılması&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Kaynak kodlardaki yorumlar, fazlalık olan boşluklar ve tırnak işaretleri arasındaki metinler silinir.&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;3.2. Kod İskeletlerinin Çıkarılması&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Keyfi bileşenlerinden arındırılan kodlar, belli bir formata sadeleştirilir. Bu sadeleştirme esnasında, tüm değişken isimleri, fonksiyon isimleri, döngü tipleri ve koşullu ifade tipleri kendi kategorilerindeki tek bir tipe indirgenir. Tüm değişken isimleri &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;_var_&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;, tüm fonksiyon isimleri &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;_fnc_&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;, tüm döngü tipleri &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;_lop_&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; ve tüm koşullu ifade tipleri &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;_cnd_&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; olarak sadeleştirilir.&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;3.3. Parmak İzlerinin Çıkarılması&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Sadeleştirilerek iskeletleri çıkarılan kaynak kodların parmak izleri çıkarılır. Bir metnin parmak izleri, bu metindeki belli bir uzunluktaki bütün alt metinleri olarak tanımlanabilir. Örneğin &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;abcdef&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; metninin 3 uzunluklu parmak izleri &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;abc&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;bcd&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;cde&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;def&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; olarak gösterilir.&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;3.4. Parmak İzlerinin Seçilmesi&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Parmak izlerinin çıkarılmasının ardından, bu parmak izlerinden seçim yapılma aşamasına geçilir. Parmak izlerinin tamamının kullanılabileceği gibi, çok fazla dökümanın işlenmesi gereken durumlarda optimizasyon için bazı parmak izleri ihmal edilebilir. Yazılımda, parmak izlerinin seçilimi için yaygın olarak kullanılan algoritmalardan bir tanesi olan &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-style:italic;&quot;&gt;ayıklama&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; (winnowing) algoritması kullanılmaktadır. Ayıklama algoritmasının nasıl çalıştığını incelemek için şu makaleye göz atın: &lt;/span&gt;&lt;a href=&quot;http://theory.stanford.edu/~aiken/publications/papers/sigmod03.pdf&quot;&gt;&lt;span style=&quot; font-size:12pt; text-decoration: underline; color:#0000ff;&quot;&gt;http://theory.stanford.edu/~aiken/publications/papers/sigmod03.pdf&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;3.5. Karşılaştırma İşlemi&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Her bir kaynak kodu için seçilen parmak izleri, hash tablolarına yerleştirilir. Daha sonra karşılaştırılacak her kaynak kod ikilisi için, bu hash tabloları karşılaştırılır. &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-style:italic;&quot;&gt;A&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; kodunun &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-style:italic;&quot;&gt;B&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; koduna olan benzerlik oranı, iki koddaki ortak parmak izi sayısının, &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-style:italic;&quot;&gt;A&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; kodunun parmak izi sayısına oranı olarak tanımlanabilir. Böylece, benzerliğin iki taraflı olduğu görülebilir.&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;4. Parametreler&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Kod Dedekfiti için iki temel parametre bulunmaktadır: parmak izi uzunluğu ve pencere boyutu.&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;4.1. Parmak İzi Uzunluğu&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Karşılaştırılacak kodların parmak izi uzunluklarının değiştirilmesiyle hassasiyet değişmiş olur. Örneğin 100 uzunluklu parmak izlerinin karşılaştırılması sonucu ortaya çıkan ortak parmak izleri sayısı, 5 uzunluklu parmak izlerinin karşılaştırma sonucu ortaya çıkan ortak parmak izleri sayısına göre (çoğu zaman) daha az olur.&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;4.2. Pencere Boyutu&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Pencere boyutu, ayıklama algoritmasında kullanılan bir parametredir. Pencere boyutunun arttırılmasıyla, seçilen parmak izi sayısı (çoğu zaman) azalır. Böylece karşılaştırılacak parmak izleri sayısı azalacağından dolayı bir optimizasyon sağlanmış olur. Bu optimizasyonun olumlu sonuçları, az sayıda döküman için gözlemlenemeyebilir. Bu yüzden az sayıda döküman için pencere boyutunun 1 seçilerek bütün parmak izlerinin kullanılmasında bir mahsur yoktur.&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;4.3. Klasör Modu&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Klasör modu, karşılaştırılacak dökümanların her birisinin ayrı birer klasör altında olması durumunda kullanılmalıdır. Kod Dedektifi bu durumda, her bir klasör için, klasördeki ve klasörün alt klasörlerindeki (belirtilen dosya tipindeki) bütün dökümanları birleştirirek tek bir döküman olarak işler.&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;5. Hata Tipleri&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Kod Dedektifi, bazı kodları işlemesi esnasında hata mesajı verebilir. Bu hataların muhtemel sebepleri aşağıda belirtilmiştir.&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:10px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;— Hata mesajı üretilen döküman düz metin formatında olmayabilir.&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:10px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;— Eğer döküman tipi&lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt; C&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; ise, hata mesajı üretilen C kaynak kodunun söz diziminde (syntax) hata olabilir. Bu hata nedeniyle Kod Dedektifi, C kaynak kodunun dönüşümünü sağlarken sonsuz döngüye girebilir.&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:10px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;— Eğer döküman tipi&lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt; PDF&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; ise, hata mesajı üretilen PDF dökümanı arama yapılabilir formatta olmayabilir.&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:0px; margin-right:5px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Eğer yukarıdaki hataların doğru olmadığını düşünüyorsanız, lütfen hata mesajı aldığınız dökümanı bize gönderin: &lt;/span&gt;&lt;a href=&quot;arazosman@outlook.com&quot;&gt;&lt;span style=&quot; font-size:12pt; text-decoration: underline; color:#0000ff;&quot;&gt;arazosman@outlook.com&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;1. What is Code Detective?&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Code Detective is a software created for plagiarism detection between the given source codes. The software is based on the steps of a method called Measure of Software Similarity (MOSS).&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;For updates, you can follow https://github.com/arazosman/Code-Detective.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;2. For Which Source Codes Is Code Detective Available?&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The Code Detective can be used for all source code (C, Java, Python etc.) in plain text format and for documents in PDF format. In the current version of the software, for C source codes, by processing the syntax of the codes (syntax), a conversion process is applied to increase the performance rate.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3. How Does Code Detective Work?&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The Code Detective basically consists of 5 steps:&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1. Freeing the source code from arbitrary components. (For C source codes only).&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2. Extracting skeletons of source codes. (For C source codes only).&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3. Removing fingerprints of simplified source codes.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4. Selection of fingerprints with the extraction algorithm.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;5. Comparing fingerprints to measure similarity.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3.1. Purification of Arbitrary Components&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Comments between the source code, excess spaces and quotes are deleted.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3.2. Removing Code Skeletons&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Codes purified from arbitrary components are simplified to a certain format. During this simplification, all variable names, function names, loop types and conditional expression types are reduced to a single type in their category. All variable names are simplified as _var_, all function names _fnc_, all loop types _lop_ and all conditional expression types _cnd_.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3.3. Removing Fingerprints&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Fingerprints of the source codes whose skeletons are removed are simplified. Fingerprints of a text can be defined as all subtext of a certain length in this text. For example, 3-length fingerprints of abcdef text are shown as abc, bcd, cde, def.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3.4. Selecting Fingerprints&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;After the fingerprints are removed, the stage of selection is made from these fingerprints. While fingerprints can be used as a whole, some fingerprints can be neglected for optimization when too many documents need to be processed. The software uses the winnowing algorithm, which is one of the commonly used algorithms for the selection of fingerprints. To review how the extraction algorithm works, check out this article: http://theory.stanford.edu/~aiken/publications/papers/sigmod03.pdf&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3.5. Comparison Process&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Fingerprints selected for each source code are placed in hash tables. For each source code pair to be compared later, these hash tables are compared. The similarity ratio of A code to B code can be defined as the ratio of the number of common fingerprints in two codes to the number of fingerprints of A code. Thus, it can be seen that the similarity is bilateral.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4. Parameters&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;There are two basic parameters for Code Detector: fingerprint length and window size.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4.1. Fingerprint Length&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;By changing the fingerprint lengths of the codes to be compared, the sensitivity is changed. For example, the number of common fingerprints resulting from the comparison of 100-length fingerprints is less (often) than the number of common fingerprints that result from the comparison of 5-length fingerprints.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4.2. Window Size&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Window size is a parameter used in the extraction algorithm. By increasing the window size, the number of fingerprints selected (often) decreases. Thus, an optimization is achieved since the number of fingerprints to be compared will decrease. The positive results of this optimization may not be observed for a small number of documents. Therefore, it is not a problem to use all fingerprints by selecting window size 1 for a small number of documents.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4.3. Folder Mode&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Folder mode should be used if each of the documents to be compared is under a separate folder. In this case, the Code Detective combines all documents in the folder and subfolders of the folder (of the specified file type) as a single document for each folder.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;5. Types of Errors&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Code Detective may generate an error message when processing some codes. Possible causes of these errors are listed below.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- The document produced with the error message may not be in plain text format.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- If the document type is C, there may be an error in the syntax of the source code of the generated C source code. Due to this error, Code Detective can enter infinite loop while converting C source code.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- If the document type is PDF, the PDF document with the error message may not be in searchable format.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;If you think that the above errors are not correct, please send us the document you received the error message: &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;arazosman@outlook.com&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
       <property name="openExternalLinks">
        <bool>true</bool>
@@ -601,24 +589,24 @@ p, li { white-space: pre-wrap; }
        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Noto Sans'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/images/images/logo.ico&quot; width=&quot;100&quot; /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:24pt; font-weight:600; color:#000000;&quot;&gt;KOD DEDEKTİFİ&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#000000;&quot;&gt;Yıldız Teknik Üniversitesi&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:13pt; color:#000000;&quot;&gt;Bilgisayar Mühendisliği Bölümü&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:30px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:13pt; color:#000000;&quot;&gt;Bilgisayar Projesi&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:5px; margin-bottom:5px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#000000;&quot;&gt;Programcılar:&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#000000;&quot;&gt;  — Osman Araz (arazosman@outlook.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#000000;&quot;&gt;  — Muhammet Çeneli (muhammetceneli@gmail.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Noto Sans'; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Noto Sans'; font-size:24pt; font-weight:600; color:#000000;&quot;&gt;KOD DEDEKTİFİ&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Noto Sans'; font-size:16pt; color:#000000;&quot;&gt;Yıldız Teknik Üniversitesi&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Noto Sans'; font-size:13pt; color:#000000;&quot;&gt;Bilgisayar Mühendisliği Bölümü&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:30px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Noto Sans'; font-size:13pt; color:#000000;&quot;&gt;Bilgisayar Projesi&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:5px; margin-bottom:5px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Noto Sans'; font-size:12pt; color:#000000;&quot;&gt;Programcılar:&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Noto Sans'; font-size:12pt; color:#000000;&quot;&gt;  — Osman Araz (arazosman@outlook.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Noto Sans'; font-size:12pt; color:#000000;&quot;&gt;  — Muhammet Çeneli (muhammetceneli@gmail.com)&lt;/span&gt;&lt;/p&gt;
 &lt;hr /&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:5px; margin-bottom:5px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#000000;&quot;&gt;Kullanılan Araçlar:&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#000000;&quot;&gt;  — GCC 8.3.0&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#000000;&quot;&gt;  — QT Creator 4.9.1&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:5px; margin-bottom:5px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Noto Sans'; font-size:12pt; color:#000000;&quot;&gt;Kullanılan Araçlar:&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Noto Sans'; font-size:12pt; color:#000000;&quot;&gt;  — GCC 8.3.0&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Noto Sans'; font-size:12pt; color:#000000;&quot;&gt;  — QT Creator 4.9.1&lt;/span&gt;&lt;/p&gt;
 &lt;hr /&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:5px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#000000;&quot;&gt;Kod Dedektifi - 1.0.2 (Kasım 2019)&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://github.com/arazosman/Code-Detective&quot;&gt;&lt;span style=&quot; font-size:12pt; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/arazosman/Code-Detective&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;http://theory.stanford.edu/~aiken/moss/&quot;&gt;&lt;span style=&quot; font-size:12pt; text-decoration: underline; color:#0000ff;&quot;&gt;http://theory.stanford.edu/~aiken/moss/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:5px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Noto Sans'; font-size:12pt; color:#000000;&quot;&gt;Kod Dedektifi - 1.0.2 (Kasım 2019)&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://github.com/arazosman/Code-Detective&quot;&gt;&lt;span style=&quot; font-family:'Noto Sans'; font-size:12pt; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/arazosman/Code-Detective&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;http://theory.stanford.edu/~aiken/moss/&quot;&gt;&lt;span style=&quot; font-family:'Noto Sans'; font-size:12pt; text-decoration: underline; color:#0000ff;&quot;&gt;http://theory.stanford.edu/~aiken/moss/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
       <property name="openExternalLinks">
        <bool>true</bool>
