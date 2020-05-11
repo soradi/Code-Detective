@@ -10,12 +10,6 @@
     <height>600</height>
    </rect>
   </property>
-  <property name="sizePolicy">
-   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-    <horstretch>0</horstretch>
-    <verstretch>0</verstretch>
-   </sizepolicy>
-  </property>
   <property name="minimumSize">
    <size>
     <width>900</width>
@@ -24,8 +18,8 @@
   </property>
   <property name="maximumSize">
    <size>
-    <width>900</width>
-    <height>600</height>
+    <width>1600</width>
+    <height>1600</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -58,8 +52,8 @@
    </property>
    <property name="maximumSize">
     <size>
-     <width>900</width>
-     <height>540</height>
+     <width>1600</width>
+     <height>1600</height>
     </size>
    </property>
    <property name="autoFillBackground">
@@ -84,10 +78,10 @@
     <enum>Qt::ScrollBarAlwaysOn</enum>
    </property>
    <property name="horizontalScrollBarPolicy">
-    <enum>Qt::ScrollBarAsNeeded</enum>
+    <enum>Qt::ScrollBarAlwaysOn</enum>
    </property>
    <property name="sizeAdjustPolicy">
-    <enum>QAbstractScrollArea::AdjustIgnored</enum>
+    <enum>QAbstractScrollArea::AdjustToContents</enum>
    </property>
    <property name="autoScroll">
     <bool>false</bool>
@@ -144,7 +138,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>711</width>
      <height>30</height>
     </rect>
    </property>
@@ -164,7 +158,7 @@
   <widget class="QPushButton" name="searchButton">
    <property name="geometry">
     <rect>
-     <x>800</x>
+     <x>710</x>
      <y>0</y>
      <width>100</width>
      <height>30</height>
@@ -185,6 +179,19 @@
    </property>
    <property name="default">
     <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="copyButton">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>0</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Copy</string>
    </property>
   </widget>
  </widget>

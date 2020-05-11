@@ -26,6 +26,8 @@ public:
     std::vector <std::string> getCodeFileList() { return codeFileList; }
     int getK() { return k; }
     int getW() { return w; }
+    void setProgressBar(int val);
+    void initProgressBar(int max);
 
     ~MainWindow();
 

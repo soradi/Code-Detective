@@ -1,5 +1,7 @@
+#include "mainwindow.h"
 #include "resultwindow.h"
 #include "ui_resultwindow.h"
+#include <QClipboard>
 
 ResultWindow::ResultWindow(QWidget *parent) :
     QWidget(parent),
@@ -8,14 +10,14 @@ ResultWindow::ResultWindow(QWidget *parent) :
     ui->setupUi(this);
 }
 
-ResultWindow::ResultWindow(std::vector<std::string> &codeFileList, QStringList &extension,
-                           bool isFolderMode, int k, int w): ResultWindow()
+ResultWindow::ResultWindow(std::vector<std::string> &codeFileList, QStringList &extension,bool isFolderMode, int k, int w,Ui::MainWindow * m): ResultWindow()
 {
     this->codeFileList = codeFileList;
     this->k = k;
     this->w = w;
     this->isFolderMode = isFolderMode;
     this->extension = extension;
+    this->parentWindow = m;
 
     QElapsedTimer timer; // a timer object to keep elapsed time for calculations
     timer.start();
@@ -29,6 +31,7 @@ ResultWindow::ResultWindow(std::vector<std::string> &codeFileList, QStringList &
 
     if (codes.size() > 0)
     {
+        this->show();
         // calculating code similarities
         similarities = calculateSimilarities(codes);
 
@@ -151,11 +154,27 @@ void ResultWindow::resizeTable()
     ui->tableCodes->horizontalHeader()->setSectionResizeMode(QHeaderView::Fixed);
 
 }
+// Returns factorial of n
+long fact(long n)
+{
+    long res = 1;
+    for (int i = 2; i <= n; i++)
+        res = res * i;
+    return res;
+}
+long nCr(int n, int r)
+{
+    return fact(n) / (fact(r) * fact(n - r));
+}
 
 // A function which calculates similarity rates of code pairs.
 std::vector <CodePair> ResultWindow::calculateSimilarities(std::vector<Code> &codes)
 {
     std::vector <CodePair> similarities;
+    //long TotalNumberOfIterations=nCr(codes.size(),2);
+    //int CurrentIteration=0;
+    //Ui::MainWindow *MyP = this->parentWindow;
+    //*MyP->initProgressBar(TotalNumberOfIterations);
 
     for (size_t i = 0; i < codes.size()-1; ++i)
     {
@@ -164,6 +183,7 @@ std::vector <CodePair> ResultWindow::calculateSimilarities(std::vector<Code> &co
             // getting the number of matched fingerprints
             int sameFingerprints = compareCodes(codes[i], codes[j]);
             size_t less, bigger;
+           // CurrentIteration++;
 
             if (codes[i].numOfSelectedFingerPrints < codes[j].numOfSelectedFingerPrints)
                 less = j, bigger = i;
@@ -188,6 +208,31 @@ std::string ResultWindow::getInvalidFiles(const std::vector<std::string> &invali
         invalidFiles += codeName + "\n";
 
     return invalidFiles;
+}
+void ResultWindow::CopyToClipBoard(){
+    QClipboard *clipboard = QApplication::clipboard();
+
+    int tbl_lines = ui->tableCodes->rowCount();
+
+    QString str;
+
+    for (int i=0; i<tbl_lines; i++)
+    {
+
+    QString mydata0 = ui->tableCodes->item(i, 0)->text();
+    QString mydata1 = ui->tableCodes->item(i, 1)->text();
+    QString mydata2 = ui->tableCodes->item(i, 2)->text();
+    QString mydata3 = ui->tableCodes->item(i, 3)->text();
+    QString mydata4 = ui->tableCodes->item(i, 4)->text();
+    QTextStream(&str) << mydata0 << "\t" << mydata1 << "\t"<< mydata2 << "\t" << mydata3 <<"\t"<< mydata4 << "\t" << endl;
+    }
+    clipboard->setText(str,QClipboard::Clipboard);
+
+
+}
+void ResultWindow::on_copyButton_clicked()
+{
+    CopyToClipBoard();
 }
 
 // A function which searches a text over code names.

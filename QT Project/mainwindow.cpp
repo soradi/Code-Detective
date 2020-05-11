@@ -25,8 +25,8 @@ void MainWindow::on_pushDir_clicked()
         currExtension = "C";
     else if (ui->radio_TXT->isChecked())
         currExtension = "TXT";
-    else if (ui->radio_PDF->isChecked())
-        currExtension = "PDF";
+    /*else if (ui->radio_PDF->isChecked())
+        currExtension = "PDF";*/
     else
         currExtension = ui->comboBox->currentText().toStdString();
 
@@ -65,13 +65,23 @@ void MainWindow::fillTextBrowser(QString dir)
         }
     }
 }
+// A function which initialize tweaks.
+void MainWindow::setProgressBar(int val)
+{
+    ui->pB_Percentage->setValue(val);
+}
 
+// A function which initialize tweaks.
+void MainWindow::initProgressBar(int max)
+{
+    ui->pB_Percentage->setRange(0,max);
+}
 void MainWindow::on_pushStart_clicked()
 {
     // it must be some files to process calculations
     if (codeFileList.size() > 0)
     {
-        ui->pushStart->setText("Processing...");
+        ui->pushStart->setText("جاري التنفيذ...");
         ui->pushStart->setStyleSheet("QPushButton { color: white; background: #9b59b6; }");
         ui->pushStart->repaint();
 
@@ -79,11 +89,10 @@ void MainWindow::on_pushStart_clicked()
         w = ui->slider_w->value(); // getting specified window size from user
 
         // opening result window
-        ResultWindow *window = new ResultWindow(codeFileList, extensions[currExtension],
-                                                ui->checkFolderMode->isChecked(), k, w);
+        ResultWindow *window = new ResultWindow(codeFileList, extensions[currExtension],ui->checkFolderMode->isChecked(), k, w,ui);
         window->show();
 
-        ui->pushStart->setText("Hesapla");
+        ui->pushStart->setText("ابدأ");
         ui->pushStart->setStyleSheet("QPushButton { color: white; background: rgb(245, 121, 0); }");
         ui->pushStart->repaint();
     }
@@ -105,6 +114,7 @@ void MainWindow::setTweaks()
     ui->slider_k->setEnabled(false);
     ui->slider_w->setEnabled(false);
 }
+
 
 // A function which initialize combo box.
 void MainWindow::initializeComboBox()
@@ -134,7 +144,7 @@ void MainWindow::initializeExtensions()
 {
     currExtension = "C";
 
-    extensions = { {"C", {"*.c", "*.h"}},
+    extensions = { {"C", {"*.c", "*.h", "*.ino"}},
                    {"TXT", {"*.txt"}},
                    {"PDF", {"*.pdf"}},
                    {"Python", {"*.py"}},

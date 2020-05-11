@@ -140,16 +140,16 @@ QString pdfToText(const std::string &path)
 {
     qDebug() << path.c_str();
 
-    Poppler::Document *doc = Poppler::Document::load(QString::fromStdString(path));
+    /*Poppler::Document *doc = Poppler::Document::load(QString::fromStdString(path));
 
     if (!doc)
        return nullptr;
-
+*/
     QString fullText;
-
+/*
     for (int i = 0; i < doc->numPages(); ++i)
         fullText += doc->page(i)->text(QRectF());
-
+*/
     return fullText;
 }
 

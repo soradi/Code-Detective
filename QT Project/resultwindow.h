@@ -10,7 +10,7 @@
 
 #include "processdocuments.h"
 #include "detailwindow.h"
-
+#include "mainwindow.h"
 namespace Ui {
 class ResultWindow;
 }
@@ -30,7 +30,7 @@ public:
     explicit ResultWindow(QWidget *parent = nullptr);
 
     explicit ResultWindow(std::vector <std::string> &codeFileList, QStringList &extensions,
-                          bool isFolderMode, int k, int w);
+                          bool isFolderMode, int k, int w,Ui::MainWindow * m);
 
     ~ResultWindow();
 
@@ -38,6 +38,7 @@ private slots:
     void on_tableCodes_cellDoubleClicked(int row, int column);
 
     void on_searchButton_clicked();
+    void on_copyButton_clicked();
 
     void on_searchValue_returnPressed();
 
@@ -48,8 +49,10 @@ private:
     std::vector <CodePair> calculateSimilarities(std::vector <Code> &codes);
     std::string getInvalidFiles(const std::vector<std::string> &invalidCodes);
     void searchRows(const QString &value);
+    void CopyToClipBoard();
 
     std::vector <Code> codes;
+    Ui::MainWindow * parentWindow;
     std::vector <std::string> codeFileList;
     QStringList extension;
     bool isFolderMode;
